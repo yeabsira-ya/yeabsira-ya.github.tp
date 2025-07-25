@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="am">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ኢትዮጵያ ኦርቶዶክስ ተዋሕዶ ቤተ ክርስቲያን</title>
+    <style>
+        :root {
+            --primary-color: #d4af37;
+            --secondary-color: #006400;
+            --light-color: #f8f8f8;
+            --dark-color: #333333;
+            --accent-color: #8b0000;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial Unicode MS', 'Nyala', 'Abyssinica SIL', sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: var(--dark-color);
+            line-height: 1.6;
+            direction: rtl;
+        }
+
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://placehold.co/1920x1080') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+            position: relative;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin: 1.5rem 0;
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+        }
+
+        h3 {
+            font-size: 1.4rem;
+            margin: 1rem 0;
+            color: var(--accent-color);
+        }
+
+        nav {
+            background-color: var(--secondary-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 1rem;
+            flex-wrap: wrap;
+        }
+
+        nav li {
+            margin: 0 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: var(--primary-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        section {
+            background-color: white;
+            margin-bottom: 2rem;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        .img-container {
+            margin: 1.5rem 0;
+            text-align: center;
+        }
+
+        .img-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .img-container figcaption {
+            font-style: italic;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .card {
+            background-color: var(--light-color);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background-color: var(--primary-color);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav li {
+                margin: 0.5rem 0;
+            }
+
+            section {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://placehold.co/200x200" alt="ቅዱሳት መስቀሉ በወርቅም በብርም የተሠራ - Ethiopian Orthodox Cross in gold and silver" class="logo">
+        <h1>ኢትዮጵያ ኦርቶዶክስ ተዋሕዶ ቤተ ክርስቲያን</h1>
+        <p>created by yeabsira zenebe</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#history">ታሪክ</a></li>
+            <li><a href="#beliefs">እምነቶች</a></li>
+            <li><a href="#traditions">ባሕሎች</a></li>
+            <li><a href="#feasts">በዓላት</a></li>
+            <li><a href="#fasts">ጾመ-ናሳት</a></li>
+            <li><a href="#worship">የአምልኮ ስርዓት</a></li>
+            <li><a href="#structure">የቤተ ክርስቲያን መዋቅር</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="history">
+            <h2>ታሪክ</h2>
+            <div class="img-container">
+                <img src="https://placehold.co/800x400" alt="አክሱም የዓረብ አበባ እምየ አይሁድ መድኃኒታችንን ኢየሱስ ክርስቶስ ያመለከተው ቦታ - the site in Axum where Judaism met Christianity">
+                <figcaption>አክሱም የኢትዮጵያ ኦርቶዶክስ ቤተ ክርስቲያን መነሻ</figcaption>
+            </div>
+            <p>ኢትዮጵያ ኦርቶዶክስ ተዋሕዶ ቤተ ክርስቲያን በአክሱም ከዓረብ አበባዋ በ4ኛው ክፍለ ዘመን ተመሠረተች። አቡነ ፍሬሜናቶስ በ 330 ዓ.ም. በአሁኑ አባ ጳውሎስ ወርሁ መጣ እና በንጉሠ ነገሥቱ ንጉሥ አዛና ዘመን ቤተ ክርስቲያንን አዲሱን እምነት አስተዋወቀ።</p>
+            <p>ቤተ ክርስቲያኑ በኢትዮጵያ ታሪክ ውስጥ አስፈላጊ ሚና አላት። ከምስራቅ እና ከምዕራብ ቤተክርስቲያኖች ጋር የሰላም አምልኮ ስርዓቶች እና ሃይማኖታዊ ትምህርቶችን አካፍላለች።</p>
+        </section>
+
+        <section id="beliefs">
+            <h2>እምነቶች</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>የሥላሴ አንድነት</h3>
+                    <p>እግዚአብሔር አብ፣ ወልድ፣ ቅዱስ መንፈስ ከሆነ አንድ አምላክ ናቸው።</p>
+                </div>
+                <div class="card">
+                    <h3>የክርስቶስ ተዋሕዶ</h3>
+                    <p>ኢየሱስ ክርስቶስ በአንድ ግለሰብ ውስጥ ሙሉ አምላክነት እና ሙሉ ሰውነት አለው።</p>
+                </div>
+                <div class="card">
+                    <h3>የጻድቃን ጠለቀ ምልዋን</h3>
+                    <p>አመላካቾች ከእግዚአብሔር ጋር የሚኖሩትን ህይወት ይመለከታል።</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="traditions">
+            <h2>ባሕሎች</h2>
+            <div class="img-container">
+                <img src="https://placehold.co/800x400" alt="የአድዋ ቤተ ክርስቲያኖች የወቅቱን የምስክር ኪዳን አገልግሎት - Ethiopian Orthodox clergy performing traditional liturgy">
+            </div>
+            <p>ኢትዮጵያ ኦርቶዶክስ ቤተ ክርስቲያን የራሷን የባሕል እና የአምልኮ ስርዓት አላት። ይህ የግዕዝ ቋንቋ፣ ቅዱስ ቅቤጥ ስክሪፕት፣ እና የሮከት ማስገሪያ ያካተተ ነው።</p>
+            <p>አንድ ከምልክታቸው የኢትዮጵያ የክርስቲያን ባህሎች የቤተ ክርስቲያን ልብሶች፣ የመስቀል እና የአባቶች መልክዓ ሰላም እና የገዛ የዘማሪዎች ድርጊት ነው።</p>
+        </section>
+
+        <section id="feasts">
+            <h2>በዓላት</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>ገና</h3>
+                    <p>የክርስቶስ ልደት (ጥር 7)። በብዙ ሃይማኖታዊ ደስታ ይከበራል።</p>
+                </div>
+                <div class="card">
+                    <h3>ጥምቀት</h3>
+                    <p>የክርስቶስ ጥምቀት (ጥር 11)። በብዙ አበክሮ የሚከበር።</p>
+                </div>
+                <div class="card">
+                    <h3>ፋሲካ</h3>
+                    <p>የክርስቶስ ትንሳኤ። በቤተ ክርስቲያን በብዙ ደስታ ይከበራል።</p>
+                </div>
+                <div class="card">
+                    <h3>ሆሳዕና</h3>
+                    <p>የክርስቶስ ስቅለት አስታውስ። በብዙ አክብሮት ይከበራል።</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="fasts">
+            <h2>ጾመ-ናሳት</h2>
+            <p>ኢትዮጵያ ኦርቶዶክስ ቤተ ክርስቲያን በየዓመቱ ካሉት ወቅቶች አንዱ የሆነው ጾም ነው። አባቶች ከሚሰሩት ጾሞች ውስጥ፦</p>
+            <ul>
+                <li>ጾመ አዳም (40 ቀናት ከፋሲካ በፊት)</li>
+                <li>ጾመ ሐዋርያት (በነሐሴ ወር)</li>
+                <li>ጾመ ድንኳን (ከዲሴምበር 25 እስከ ጥር 6)</li>
+                <li>ጾመ ቅድስት ማርያም (ነሐሴ 7-21)</li>
+                <li>እሁድ ጾም (የሰኞ እና አርብ መጋቢት 10)</li>
+            </ul>
+        </section>
+
+        <section id="worship">
+            <h2>የአምልኮ ስርዓት</h2>
+            <div class="img-container">
+                <img src="https://placehold.co/800x400" alt="የኢትዮጵያ ኦርቶዶክስ ቤተ ክርስቲያን የገዛና አገልግሎት በብዙ መልክ የተውጣጣ - Ethiopian Orthodox worship service with drummers and clergy">
+            </div>
+            <p>የኢትዮጵያ ኦርቶዶክስ አምልኮ ስርዓት በአራት ቁልፍ ክፍሎች የተዋቀረ ነው፦</p>
+            <ol>
+                <li>የዜማ አገልግሎት</li>
+                <li>የምእራፍ ክፍል</li>
+                <li>የቅዳሴ ስርዓት</li>
+                <li>የቅድስት ቁርባን</li>
+            </ol>
+            <p>ሌሎች የአምልኮ ክፍሎች የውስጥ እና የውጭ አምልኮን፣ የሐዋርያት መጻሕፍትን፣ እና የቅዱሳን ታሪኮችን አካተተው።</p>
+        </section>
+
+        <section id="structure">
+            <h2>የቤተ ክርስቲያን መዋቅር</h2>
+            <div class="img-container">
+                <img src="https://placehold.co/800x400" alt="የኢትዮጵያ ኦርቶዶክስ ቤተ ክርስቲያን የቤተ መንግሥት አወቃቀር እና የመኳንንት ስርዓት - Ethiopian Orthodox Church hierarchy structure">
+            </div>
+            <p>ኢትዮጵያ ኦርቶዶክስ ቤተ ክርስቲያን የራሷን የዓለማዊ እና መንፈሳዊ መሪ አላት። የቤተ ክርስቲያኑ መዋቅር እንደሚከተለው የተዋቀረ ነው፦</p>
+            <ul>
+                <li>የቅዱስ ሲኖዶስ (ጉባኤ)</li>
+                <li>አባ ጳውሎስ (የቤተ ክርስቲያኑ መሪ)</li>
+                <li>አቡነ (አርበኞች)</li>
+                <li>ኤፒስኮፖስ (አገራዊ መሪዎች)</li>
+                <li>ቄስ (ከአካባቢ ቤተ ክርስቲያኖች የሚመሩ)</li>
+                <li>ዲያቆን (የቤተ ክርስቲያን ሰራተኞች)</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2023 ኢትዮጵያ ኦርቶዶክስ ተዋሕዶ ቤተ ክርስቲያን</p>
+        <p>ስለ ቤተክርስቲያኑ የበለጠ ለማወቅ የአካባቢዎን ቤተ ክርስቲያን ያነጋግሩ</p>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">↑</div>
+
+    <script>
+        // Back to top button
+        const backToTop = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+        
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Smooth scrolling for navigation
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                window.scrollTo({
+                    top: targetElement.offsetTop - 70,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
